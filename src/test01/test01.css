@@ -30,3 +30,29 @@ text-align : center;
 .btn-space{
         padding: 10px;
     }
+
+.eqcol-container {
+    display: table;
+    width: 100%;
+}
+.eqcol {
+    display: table-cell;
+    padding: 16px;
+	white-space:pre-wrap;
+}
+
+@media only screen and (max-width: 768px) {
+    .eqcol { 
+        display: block;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .eqcol { 
+        display: block;
+		padding:2px;
+        width: 100%;
+		white-space:pre-wrap;
+    }
+}
