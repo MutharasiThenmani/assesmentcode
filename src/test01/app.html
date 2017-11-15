@@ -12,12 +12,12 @@
 Pick a topic, then we'll find a time and place
 </div>
 
-<div class="container" >
+<div class="container eqcol-container" >
         <div class="row pt30">
 			<!-- More than one button Mobile/Desktop/Tablet-->
 			<div ng-show="moreButtons" class="col-md-6 col-sm-6 col-xs-12" ng-repeat= "buttonObj in buttonArray track by $index">
             	 <div class="btn-space" >
-					<button data-toggle="tooltip" data-placement="top" title="{{'tooltipData'|translate}}" class="btn btn-default col-sm-10 col-md-10 col-xs-10" equalheight> {{buttonObj.text}}
+					<button data-toggle="tooltip" data-placement="top" title="{{'tooltipData'|translate}}" class="eqcol btn btn-default col-sm-10 col-md-10 col-xs-10" equalheight> {{buttonObj.text}}
 					</button> <!-- Tooltip is added to see the Localized data-->
 				 </div>			
 
