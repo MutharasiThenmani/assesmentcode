@@ -1,0 +1,57 @@
+
+.pt5 {
+	padding-top: 5px;
+}
+
+.pl5 {
+	padding-left: 5px;
+}
+
+.pt10 {
+	padding-top: 10px;
+}
+
+.pt15 {
+	padding-top: 15px;
+}
+
+.pt30 {
+	padding-top: 30px;
+}
+
+.p30 {
+	padding: 30px;
+}
+
+.center-align {
+text-align : center;
+}
+
+.btn-space{
+        padding: 10px;
+    }
+/*
+@media (max-width: 991px) and (min-width: 768px)
+.visible-sm-block .visible-md-block {
+    display: block!important;
+}
+*/
+
+/*
+@media screen and (max-width:768px) {
+	.mobile-menu{
+		display:block;
+	}
+	.other-menu{
+		display:none;
+	}
+}
+
+@media (min-width :769px){
+	.mobile-menu{
+		display:none;
+	}
+	.other-menu{
+		display:block;
+	}
+}*/
