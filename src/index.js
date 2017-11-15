@@ -27,7 +27,9 @@ angular
 			},					
 			compile:function(element,attributes){
 		    var linkFn = function(scope,element,attributes){
-				element.css("white-space","pre-wrap");
+				//element.css("white-space","pre-wrap");
+				//alert(scope);
+				//add the css class after test
 			}
 				  return linkFn;
 			}
