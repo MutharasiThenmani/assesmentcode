@@ -5,7 +5,7 @@
 
 	    <form class="future-banking" role="Funds Transfer Form">
 			
-			<section class="container-fluid header">
+			<section class="container-fluid header" role="Send Transfer">
 		    	<div class="row">
 		    		<div class="col-xs-12 col-sm-12 col-md-6">
 		        		<i class="fa fa-credit-card fa-2x"></i>
@@ -15,9 +15,9 @@
 		        		<div class="btn-group" role="group">
 			        		<button class="btn btn-default">
 			        			<img class="profile-img" alt="" role="alert">
-			        			<span id="user-name">John Smith</span>
+			        			<span for="user-name" id="user-name">John Smith</span>
 			        		</button>
-			        		<button class="btn btn-default">
+			        		<button role="sign out" class="btn btn-default">
 			        			Sign out
 								<i class="fa fa-sign-out fa-lg"></i>
 			        		</button>
@@ -39,16 +39,16 @@
 			        		<h4>From</h4>
 			        		
 			        		<div class="row bg-gray">
-			        			<div class="col-xs-6">Account Name:</div>
-			        			<div class="col-xs-6">Checking</div>
+			        			<div class="col-xs-6"><label for="accountname">Account Name:</label></div>
+			        			<div class="col-xs-6"><label for="checking">Checking</label></div>
 			        		</div>
 			        		<div class="row bg-gray">
-			        			<div class="col-xs-6">Account Number:</div>
-			        			<div class="col-xs-6">123456789</div>
+			        			<div class="col-xs-6"><label for="accountnumber">Account Number:</label></div>
+			        			<div class="col-xs-6"><label for="123456789">123456789</label></div>
 			        		</div>
 			        		<div class="row bg-gray">
-			        			<div class="col-xs-6">Current Balance:</div>
-			        			<div class="col-xs-6">{{5000 | currency }}</div>
+			        			<div class="col-xs-6"><label for="currentbalance">Current Balance:</label></div>
+			        			<div class="col-xs-6"><label for="5000">{{5000 | currency }}</label></div>
 			        		</div>
 
 			        		<hr/>
@@ -58,7 +58,7 @@
 		        </div>
 	        </section>
 
-	        <section class="container-fluid" id="transfer-details">
+	        <section class="container-fluid" id="transfer-details" role="Transfer Details">
 				<div class="col-xs-12">
 			        <div class="row">
 			        	<div class="col-xs-12">
@@ -67,10 +67,10 @@
 			        		
 			        		<div class="row bg-gray">
 			        			<div class="col-xs-6">
-			        				<label id="transfer-amount">Amount to transfer:</label>
+			        				<label for="amount to transfer" id="transfer-amount">Amount to transfer:</label>
 			        			</div>
 			        			<div class="col-xs-6">
-				        			<input class="form-control" type="text" value="{{300 | currency}}">
+				        			<input class="form-control" for="300" type="text" value="{{300 | currency}}">
 			        			</div>
 			        		</div>
 			        		<div class="row bg-gray">
@@ -78,11 +78,11 @@
 			        				<label id="transfer-frequency" for="transfer-frequency">Frequency:</label>
 			        			</div>
 			        			<div class="col-xs-6">
-			        				<select class="form-control">
-									  <option>Every day</option>
-									  <option>Weekly</option>
-									  <option>Bi-weekly</option>
-									  <option>Monthly</option>
+			        				<select for="frequency" class="form-control">
+									  <option for="Every day">Every day</option>
+									  <option for="Weekly">Weekly</option>
+									  <option for="Bi-Weekly">Bi-weekly</option>
+									  <option for="Monthly">Monthly</option>
 									</select>
 			        			</div>
 			        		</div>
@@ -94,7 +94,7 @@
 		        </div>
 	        </section>
 
-	        <section class="container-fluid" id="send-to-recipient">
+	        <section class="container-fluid" id="send-to-recipient" for="send to recipient">
 				<div class="col-xs-12">
 			        <div class="row">
 			        	<div class="col-xs-12">
@@ -106,13 +106,13 @@
 			        				<h3 id="recipient">Jane Smith</h3>
 			        			</div>
 			        			<div class="col-xs-4">
-				        			<a href="" class="change-user-link">Change recipient</a>
+				        			<a href="" role="change recipient" class="change-user-link">Change recipient</a>
 			        			</div>
 			        		</div>
 
 			        		<hr/>
 
-							<button type="button" class="btn btn-primary btn-send" ng-click="addAlert()">Send {{300 | currency}}</button>
+							<button for="send" type="button" class="btn btn-primary btn-send" ng-click="addAlert()">Send {{300 | currency}}</button>
 
 			        	</div>
 			        </div>
